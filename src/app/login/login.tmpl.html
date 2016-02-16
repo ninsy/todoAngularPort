@@ -1,0 +1,39 @@
+<div class='login'>
+  <form
+    class="login-form"
+    role='form'
+    name='login.loginForm'
+    ng-submit='login.submit(login.user, login.loginForm.$valid, login.user.register )'
+    novalidate>
+
+    <fieldset>
+
+    <input
+      type="text"
+      ng-model="login.user.email"
+      name='email'
+      placeholder="Enter email"
+      required
+    />
+
+    <input
+      type="password"
+      ng-model="login.user.password"
+      placeholder="Enter password"
+      required=""
+    />
+
+    <label>
+      <input
+        type="checkbox"
+        ng-model="login.user.register"
+      />
+      New User?
+    </label>
+
+    <button type="submit">Sign in</button>
+
+    </fieldset>
+
+  </form>
+</div>

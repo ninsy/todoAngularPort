@@ -44,6 +44,10 @@ body {
   background-color: #f9f9f9;
 }
 
+.navbar-right {
+  display: inline-flex;
+}
+
 input[type='text'] {
   /*margin: 20px 0;
   font-size: 1.2rem;*/
